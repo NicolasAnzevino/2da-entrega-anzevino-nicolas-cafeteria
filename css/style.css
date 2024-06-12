@@ -1,0 +1,351 @@
+*{
+    font-family: "Inter", sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.grid-container-index{
+    display: grid;
+    grid-template-areas: 
+    "barra barra barra barra barra"
+    "banner banner banner banner banner"
+    "productos productos productos productos productos"
+    "arte-cafe arte-cafe arte-cafe arte-cafe arte-cafe"
+    "visitanos visitanos visitanos visitanos visitanos"
+    "pie pie pie pie pie"
+    ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+}
+.fox-coffee-logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+}
+.navbar-toggler{
+    border-color:#ffff;
+    background-color: #e4bc84;
+}
+.barra{
+    grid-area: barra;
+    background-color: #80411e !important;
+    z-index: 1;
+    width: 100%;
+}
+.activo{
+    color:white;
+    border: #e4bc84 1px solid;
+    border-radius: 100px;
+    padding:10px;
+}
+.navbar-nav {
+    --bs-nav-link-hover-color: white;
+}
+.barra__logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+}
+.barra__logo h1{
+    font-weight: bold;
+    margin-top:5px;
+    font-size:33px;
+    margin-left:12px;
+}
+.barra__menuitems{
+    justify-content: end;
+}
+.barra__menuitems a{
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.barra__menuitems a:hover{
+    color: #d2c1b0;
+}
+.banner{
+    grid-area:banner;
+    display: flex;
+    border-radius: 10px;
+    background-color: #80411e;
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    height: 320px;
+    margin: 0.5%;
+    max-width: 100%;
+    grid-column:1/6;
+}
+.banner p{
+    color:white;
+    font-weight: bold;
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    margin-right: 10%;
+    height: 85%;
+}
+.banner--index{
+    background-image: url('../assets/index-banner.jpg');
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    margin-top:15px;
+}
+.productos{
+    grid-area:productos;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column:1/6;
+}
+.productos__collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.productos__collection__card{
+    text-align: center;
+    width: 400px;
+    height: 395px;
+    margin: 10px;
+}
+.productos__collection__card img{
+    width: 350px;
+    height:300px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.productos__collection__card p{
+    margin-top:5px;
+}
+.arte-cafe{
+    grid-area:arte-cafe;
+    margin: 10px;
+}
+.arte-cafe__card{
+    display: flex;
+}
+.arte-cafe__card img{
+    height: 300px;
+    border-radius: 10px;
+}
+.arte-cafe__card p{
+    margin-left:10px;
+}
+.visitanos{
+    grid-area:visitanos;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5%;
+    background-color: #d2c1b0;
+    padding:1%;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.visitanos__collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.visitanos__collection iframe{
+    margin-bottom:20px;
+    border-radius: 10px;
+}
+.visitanos_collection-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.visitanos__collection--direccion{
+    font-size: 18px;    
+}
+.visitanos__collection--horario{
+    display: flex;
+    align-items:last baseline;
+}
+.visitanos__collection--horario img{
+    margin-right:10px;
+    width: 30px;
+}
+.pie{
+    grid-area:pie;
+    background-color: #80411e;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7px;
+    padding-bottom:7px;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    font-weight: bold;
+}
+.pie__logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pie__logo p{
+    margin-top:15px;
+    margin-left:5px;
+}
+.pie__redessociales_logo{
+    width: 70px;
+    height: 70px;
+}
+.grid-container--quienes-somos{
+    display: grid;
+    grid-template-areas: 
+    "barra barra barra barra barra"
+    "banner banner banner banner banner"
+    "historia historia historia historia historia"
+    "visitanos visitanos visitanos visitanos visitanos"
+    "pie pie pie pie pie"
+    ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+}
+.banner--quienessomos{
+    background-image: url('../assets/quienessomos-banner2.jpeg');
+}
+.historia{
+    grid-area: historia;
+}
+.historia__collection{
+    width: 100%;
+}
+.historia__collection_card{
+    display: flex;
+    background-color: antiquewhite;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    border-radius: 50% solid red;
+    max-width: 100%;
+}
+.historia__collection_card img{
+    height: 320px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.card-two{
+    text-align: end;
+    margin-top: 20px;
+}
+.barrauwu{
+    background-color: #80411e !important;
+}
+
+/* Media Queries */
+
+/* tablet */
+@media (max-width:768px){
+    .grid-container-index{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "productos productos"
+        "arte-cafe arte-cafe"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--quienes-somos{
+        display: grid;
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "historia historia"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .banner--index{
+        background-position: left;
+    }
+    .banner--quienessomos{
+        background-position: right;
+    }
+    .arte-cafe__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .arte-cafe__card p{
+        margin-top:10px;
+    }
+    .visitanos__collection iframe{
+        max-width: 100%;
+    }
+    .visitanos_collection__items{
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+    }
+    .visitanos__collection--horario{
+        justify-content: center;
+    }
+    .historia__collection_card{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .historia__collection_card img{
+        width: 500px;
+        height: 300px;
+        max-width: 100%;
+    }
+}
+@media (max-width:480px){
+    .barra__logo img{
+        height:55px;
+        width: 55px;
+    }
+    .barra__logo h1{
+        font-size:27px;
+    }
+    .banner p{
+        margin-left:1%;
+    }
+    .arte-cafe__card img{
+        max-width: 100%;
+    } 
+    .pie img{
+        height:55px;
+        width: 55px;
+    }
+}
+
+@media (max-width:320px){
+    .grid-container-index{
+        overflow-x: hidden;
+    }
+    .grid-container--quienes-somos{
+        overflow-x: hidden;
+    }
+    .barra__logo{
+        justify-content: space-evenly;
+    }
+    .barra__logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .productos__collection__card p{
+        display: none;
+    }
+    .productos__collection__card{
+        height: 100%;
+    }
+}
