@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Fox Coffee</title>
+    <title>Productos- Fox Coffee</title>
     <!-- Icono de Pestaña -->
-    <link rel="icon" href="../assets/logo-pestana.png" type="image/icon type">
+    <link rel="icon" href="../assets/logo-pestana.png" type="image/icon type">    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Fuentes -->
@@ -14,46 +16,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="../assets/logo.jpg" alt="Logo">
-        <h1>Fox Coffee</h1>
-        <nav>
-            <ul>                
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./quienes-somos.html">¿Quiénes Somos?</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./resenas.html">Reseñas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <img src="" alt="">
-        </section>
-        <p>Nuestros Productos</p>
-        <section>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <!-- todo: agregar más cards adelante, por el momento solo 3 -->
-        </section>
-    </main>
-    <footer>
-        <img src="../assets/logo.jpg" alt="">      
-        <img src="../assets/facebook.png" alt="Facebook">        
-        <img src="../assets/instagram.png" alt="Instagram">        
-        <img src="../assets/twitter.png" alt="X">        
-        <p>© Todos los derechos reservados</p>
-    </footer>
+    <div class="grid-container--productos">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
+            <div class="container-fluid">
+                <a href="../index.html" class="barra__logo">
+                    <img src="../assets/logo.jpg" alt="Logo de Fox Coffee" class="fox-coffee-logo">
+                    <h1>Fox Coffee</h1>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse barra__menuitems" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./quienes-somos.html">¿Quiénes Somos?</a>
+                  <a class="nav-link activo" href="./productos.html">Productos</a>
+                  <a class="nav-link" href="./resenas.html">Reseñas</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="banner banner--productos">
+            <p>El Café de cada día</p>
+        </div>
+        <main class="nuestros-productos">
+            <h2 class="titulo">Nuestros Productos</h2>
+            <section class="nuestros-productos__collection">
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-cafe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Café</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-te.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Té</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-frappe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Frappé</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-chocolatada.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Chocolatada Caliente</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-licuado.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Licuados</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-jugos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Jugos 100% naturales</p>
+                    </div>
+                </div>                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-cookies.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cookies</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-torta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Tortas</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-budin.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Budines</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-brownie.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Brownie</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-donas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Donas</p>
+                    </div>
+                </div>
+                <div class="card nuestros-productos__collection__item" style="width: 18rem;">
+                    <img src="../assets/nuestros-productos-muffins.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Muffins</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="visitanos">
+            <h3 class="titulo">Visitanos</h3>
+            <div class="visitanos__collection">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.899363679615!2d-58.37538972481169!3d-34.631983358990524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb34c34d2059%3A0x2c95f10a23e9903b!2sHavanna!5e0!3m2!1ses-419!2sar!4v1717955444690!5m2!1ses-419!2sar" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="visitanos_collection__items">
+                    <p>¡Vení a conocer nuestra cafetería!</p>
+                    <p class="visitanos__collection--direccion"><b>Av. Martín García 602, Cdad. Autónoma de Buenos Aires</b></p>
+                    <div class="visitanos__collection--horario">
+                        <img src="../assets/clock-fill.svg" alt="">         
+                        <p>08:00-20:00<br>LUN-DOM</p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <footer class="pie">
+            <section class="pie__logo">
+                <img src="../assets/logo.jpg" alt="Logo de Fox Coffee" class="fox-coffee-logo">
+                <p>Fox Coffee</p>
+            </section>
+            <section>
+                Café, Té, Cookies y mucho más
+            </section>
+            <section class="pie__redessociales">
+                <img src="../assets/facebook.png" alt="Logo de Facebook" class="pie__redessociales_logo">        
+                <img src="../assets/instagram.png" alt="Logo de Instagram" class="pie__redessociales_logo">        
+                <img src="../assets/twitter.png" alt="Logo de X" class="pie__redessociales_logo">        
+            </section>
+        </footer>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
