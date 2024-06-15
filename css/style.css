@@ -361,7 +361,10 @@ body{
     }
     .arte-cafe__card img{
         max-width: 100%;
-    } 
+    }
+    .pie{
+        flex-direction: column;
+    }    
     .pie img{
         height:55px;
         width: 55px;
