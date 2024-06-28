@@ -272,7 +272,97 @@ body{
 .nuestros-productos__collection__item img{
     height: 275px;
 }
-
+.grid-container--resenas{
+    display: grid;
+    grid-template-areas: 
+    "barra barra barra barra barra"
+    "banner banner banner banner banner"
+    "resenas resenas resenas resenas resenas"
+    "visitanos visitanos visitanos visitanos visitanos"
+    "pie pie pie pie pie"
+    ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+}
+.banner--resenas{
+    background-image: url('../assets/resenas-banner.png');
+}
+.resenas{
+    grid-area:resenas;
+}
+.resenas__collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.resenas__collection__card{
+    border: 1px solid #37251b;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    height: 320px;
+    width: 370px;
+    text-align: center;
+    background-color: #37251b;
+    color: white;
+    max-width: 100%;
+    padding:5px;
+}
+.bi-star-fill{
+    color:#ffd900;
+}
+.bi-star-half{
+    color:#ffd900;
+}
+.resenas__collection__card img{
+    height: 130px;
+    border-radius: 70px;
+}
+.grid-container--contacto{
+    display: grid;
+    grid-template-areas: 
+    "barra barra barra barra barra"
+    "banner banner banner banner banner"
+    "contacto contacto contacto contacto contacto"
+    "visitanos visitanos visitanos visitanos visitanos"
+    "pie pie pie pie pie"
+    ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+}
+.banner--contacto{
+    background-image: url('../assets/contacto-banner.jpg');
+    background-position: center;
+}
+.contacto{
+    grid-area:contacto;
+}
+.contacto p{
+    text-align: center;
+}
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    border-radius: 10px;
+    background-color: #37251b;
+    padding: 10px;
+    align-items: center;
+    max-width: 100%;
+}
+.contacto__input-mensaje{
+    height: 170px !important;
+}
+.contacto__form__btn{
+    margin-top: 10px;
+}
+.contacto__form__btn button{
+    width: 200px;
+}
+.form-floating{
+    width: 500px !important;
+}
 /* Media Queries */
 
 /* tablet */
@@ -306,6 +396,28 @@ body{
         "barra barra"
         "banner banner"
         "nuestros-productos nuestros-productos"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--resenas{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "resenas resenas"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--contacto{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "contacto contacto"
         "visitanos visitanos"
         "pie pie"
         ;
@@ -369,6 +481,9 @@ body{
         height:55px;
         width: 55px;
     }
+    .form-floating{
+        width: 300px !important;
+    }
 }
 
 @media (max-width:340px){
@@ -379,6 +494,12 @@ body{
         overflow-x: hidden;
     }
     .grid-container--productos{
+        overflow-x: hidden;
+    }
+    .grid-container--resenas{
+        overflow-x: hidden;
+    }
+    .grid-container--contacto{
         overflow-x: hidden;
     }
     .barra__logo{
@@ -393,5 +514,25 @@ body{
     }
     .productos__collection__card{
         height: 100%;
+    }
+    .resenas__collection__card{
+        height: 100%;
+        width: 100%;
+    }
+    .resenas__collection__card__persona{
+        height: 100%;
+        max-width: 100%;
+    }
+    .resenas__collection__card__persona img{
+        max-width: 100%;
+    }
+    .resenas__collection__card svg{
+        max-width: 100%;
+    }
+    .resenas_collection__card__texto{
+    display: none;
+    }
+    .form-floating{
+        width: 200px !important;
     }
 }
