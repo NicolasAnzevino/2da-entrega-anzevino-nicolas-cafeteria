@@ -1,0 +1,72 @@
+@media (max-width:480px){
+    .barra__logo img{
+        @include establecerAltoAncho(55px, 55px);
+    }
+    .barra__logo h1{
+        font-size:27px;
+    }
+    .banner p{
+        margin-left:1%;
+    }
+    .arte-cafe__card img{
+        max-width: 100%;
+    }
+    .pie{
+        flex-direction: column;
+    }    
+    .pie img{
+        @include establecerAltoAncho(55px, 55px);
+    }
+    .contacto__form__input{
+        width: 300px !important;
+    }
+}
+
+@media (max-width:340px){
+    .grid-container--index{
+        overflow-x: hidden;
+    }
+    .grid-container--quienes-somos{
+        overflow-x: hidden;
+    }
+    .grid-container--productos{
+        overflow-x: hidden;
+    }
+    .grid-container--resenas{
+        overflow-x: hidden;
+    }
+    .grid-container--contacto{
+        overflow-x: hidden;
+    }
+    .barra__logo{
+        justify-content: space-evenly;
+    }
+    .barra__logo img{
+        @include establecerAltoAncho(40px, 40px);
+    }
+    .productos__collection__card p{
+        display: none;
+    }
+    .productos__collection__card{
+        height: 100%;
+    }
+    .resenas__collection__card{
+        @include establecerAltoAncho(100%, 100%);
+    }
+    .resenas__collection__card__persona{
+        height: 100%;
+        max-width: 100%;
+    }
+    .resenas__collection__card__persona img{
+        max-width: 100%;
+    }
+    .resenas__collection__card svg{
+        max-width: 100%;
+    }
+    .resenas_collection__card__texto{
+        display: none;
+    }
+    .contacto__form__input{
+        width: 200px !important;
+    }
+}

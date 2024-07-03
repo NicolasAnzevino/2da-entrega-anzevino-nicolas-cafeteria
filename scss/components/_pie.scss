@@ -1,0 +1,31 @@
+.pie{
+    grid-area:pie;
+    background-color: map-get($map: $color-, $key: barra-banner-footer);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7px;
+    padding-bottom:7px;
+    align-items: center;
+    justify-content: space-around;
+    color:#ffffff;
+    font-weight: bold;
+
+    &__logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        p{
+            margin-top:15px;
+            margin-left:5px;
+        }
+
+        &--fox-coffee-img{
+            @extend .barra__logo--fox-coffee-img;
+        }
+    }
+
+    &__redessociales_logo{
+        @include establecerAltoAncho(70px, 70px);
+    }
+}

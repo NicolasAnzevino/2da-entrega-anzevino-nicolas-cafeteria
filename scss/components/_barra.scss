@@ -1,0 +1,53 @@
+.barra{
+    grid-area: barra;
+    background-color: map-get($map: $color-, $key: barra-banner-footer) !important;
+    z-index: 1;
+    width: 100%;
+    &__logo{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color:#ffffff;
+
+        h1{
+            @include denotarTexto(bold, 33px); 
+            margin-top:5px;
+            margin-left:12px;
+        }
+
+        &--fox-coffee-img{
+            @include establecerAltoAncho(80px, 80px);
+            border-radius: 150px;
+        }
+    }
+
+    &__menuitems{
+        justify-content: end;
+
+        a{
+            margin: 10px;
+            color: #ffffff;
+            @include denotarTexto(bold, large);
+
+            &:hover{
+                color: map-get($map: $color-, $key: menuitem-visitanos);
+            }
+        }
+
+    }
+}
+
+//Estilos aplicados específicamente a componentes de Bootstrap que se utilizan en la barra.
+.navbar-toggler{
+    border-color:#ffff;
+    background-color: map-get($map: $color-, $key: navbar-activo);
+}
+.navbar-nav {
+    --bs-nav-link-hover-color: #ffffff;
+}
+.activo{
+    color:white;
+    border: #e4bc84 1px solid;
+    border-radius: 100px;
+    padding:10px;
+}

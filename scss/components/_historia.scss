@@ -1,0 +1,29 @@
+.historia{
+    grid-area: historia;
+
+    &__collection{
+        width: 100%;
+
+        img{
+            height: 320px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        &_card{
+            display: flex;
+            background-color: #faebd7;
+            padding: 5px;
+            width: 100%;
+            align-items: center;
+            border-radius: 50% solid #ffff;
+            max-width: 100%;
+
+            &--two{
+                @extend .historia__collection_card;
+                text-align: end;
+                margin-top: 20px;
+            }        
+        }
+    }
+}

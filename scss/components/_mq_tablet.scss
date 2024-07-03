@@ -1,0 +1,94 @@
+@media (max-width:768px){
+    .grid-container--index{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "productos productos"
+        "arte-cafe arte-cafe"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--quienes-somos{
+        display: grid;
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "historia historia"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--productos{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "nuestros-productos nuestros-productos"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--resenas{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "resenas resenas"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container--contacto{
+        grid-template-areas: 
+        "barra barra"
+        "banner banner"
+        "contacto contacto"
+        "visitanos visitanos"
+        "pie pie"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .banner--index{
+        background-position: left;
+    }
+    .banner--quienessomos{
+        background-position: right;
+    }
+    .arte-cafe__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .arte-cafe__card p{
+        margin-top:10px;
+    }
+    .visitanos__collection iframe{
+        max-width: 100%;
+    }
+    .visitanos_collection__items{
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+    }
+    .visitanos__collection--horario{
+        justify-content: center;
+    }
+    .historia__collection_card{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .historia__collection_card img{
+        height: 300px;
+        max-width: 100%;
+    }
+}

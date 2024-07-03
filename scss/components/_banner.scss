@@ -1,0 +1,43 @@
+.banner{
+    grid-area:banner;
+    display: flex;
+    border-radius: 10px;
+    background-color: map-get($map: $color-, $key: barra-banner-footer);
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    height: 320px;
+    margin: 0.5%;
+    max-width: 100%;
+    grid-column:1/6;
+
+    p{
+        color:#ffffff;
+        @include denotarTexto(bold, 45px);
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        height: 85%;
+    }
+
+    &--index{
+        background-image: $img-index-banner;
+    }
+
+    &--quienessomos{
+        background-image: $img-quienessomos-banner;
+    }
+
+    &--productos{
+        background-image: $img-productos-banner;
+    }
+
+    &--resenas{
+        background-image: $img-resenas-banner;
+    }
+
+    &--contacto{
+        background-image: $img-contacto-banner;
+        background-position: center;
+    }
+}

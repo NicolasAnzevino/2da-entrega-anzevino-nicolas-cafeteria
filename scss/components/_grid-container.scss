@@ -1,0 +1,62 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+
+    &--index{
+        @extend .grid-container;
+        grid-template-areas: 
+        "barra barra barra barra barra"
+        "banner banner banner banner banner"
+        "productos productos productos productos productos"
+        "arte-cafe arte-cafe arte-cafe arte-cafe arte-cafe"
+        "visitanos visitanos visitanos visitanos visitanos"
+        "pie pie pie pie pie"
+        ;
+    }
+
+    &--quienes-somos{
+        @extend .grid-container;
+        grid-template-areas: 
+        "barra barra barra barra barra"
+        "banner banner banner banner banner"
+        "historia historia historia historia historia"
+        "visitanos visitanos visitanos visitanos visitanos"
+        "pie pie pie pie pie"
+        ;
+    }
+
+    &--productos{
+        @extend .grid-container;
+        grid-template-areas: 
+        "barra barra barra barra barra"
+        "banner banner banner banner banner"
+        "nuestros-productos nuestros-productos nuestros-productos nuestros-productos nuestros-productos"
+        "visitanos visitanos visitanos visitanos visitanos"
+        "pie pie pie pie pie"
+        ;
+    }
+
+    &--resenas{
+        @extend .grid-container;
+        grid-template-areas: 
+        "barra barra barra barra barra"
+        "banner banner banner banner banner"
+        "resenas resenas resenas resenas resenas"
+        "visitanos visitanos visitanos visitanos visitanos"
+        "pie pie pie pie pie"
+        ;
+    }
+
+    &--contacto{
+        @extend .grid-container;
+        grid-template-areas: 
+        "barra barra barra barra barra"
+        "banner banner banner banner banner"
+        "contacto contacto contacto contacto contacto"
+        "visitanos visitanos visitanos visitanos visitanos"
+        "pie pie pie pie pie"
+        ;
+    }
+}

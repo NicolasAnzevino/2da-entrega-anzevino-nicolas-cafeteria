@@ -1,0 +1,30 @@
+.productos{
+    grid-area:productos;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column:1/6;
+
+    &__collection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &__card{
+            @include establecerAltoAncho(395px,400px);
+            text-align: center;
+            margin: 10px;
+
+            img{
+                @include establecerAltoAncho(300px,350px);
+                border-radius: 10px;
+                max-width: 100%;
+            }
+
+            p{
+                margin-top:5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin establecerAltoAncho($height, $width)
+{
+    height: $height;
+    width: $width;
+}
+
+@mixin denotarTexto($font-weight, $font-size)
+{
+    font-weight: $font-weight;
+    font-size: $font-size;
+}

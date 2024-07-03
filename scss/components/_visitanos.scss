@@ -1,0 +1,41 @@
+.visitanos{
+    grid-area: visitanos;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5%;
+    background-color: map-get($map: $color-, $key: menuitem-visitanos);
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    &__collection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;      
+
+        iframe{
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        &-items{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &--direccion{
+            display: flex;
+            align-items: last baseline;
+        }
+
+        &--horario{
+            display: flex;
+            align-items:last baseline;
+
+            img{
+                margin-right:10px;
+                width: 30px;
+            }
+        }        
+    }
+}

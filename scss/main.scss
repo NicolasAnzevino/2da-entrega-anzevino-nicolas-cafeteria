@@ -1,0 +1,22 @@
+//Reset
+@import './config/reset';
+@import './config/vars';
+@import './config/mixins';
+
+//Layout
+@import './components/arte-cafe';
+@import './components/banner';
+@import './components/barra';
+@import './components/contacto';
+@import './components/grid-container';
+@import './components/historia';
+@import './components/nuestros-productos';
+@import './components/pie';
+@import './components/productos';
+@import './components/resenas';
+@import './components/titulo';
+@import './components/visitanos';
+
+//Media queries
+@import './components/mq_celular';
+@import './components/mq_tablet';
