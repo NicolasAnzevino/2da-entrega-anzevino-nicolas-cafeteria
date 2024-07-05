@@ -30,6 +30,7 @@
 
     &--productos{
         background-image: $img-productos-banner;
+        background-position: center;
     }
 
     &--resenas{
@@ -38,6 +39,6 @@
 
     &--contacto{
         background-image: $img-contacto-banner;
-        background-position: center;
+        background-position: bottom 90px;
     }
 }

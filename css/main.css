@@ -45,17 +45,18 @@
   background-image: url("../assets/index-banner.jpg");
 }
 .banner--quienessomos {
-  background-image: url("../assets/quienessomos-banner2.jpeg");
+  background-image: url("../assets/quienessomos-banner.jpeg");
 }
 .banner--productos {
   background-image: url("../assets/productos-banner.jpg");
+  background-position: center;
 }
 .banner--resenas {
-  background-image: url("../assets/resenas-banner.png");
+  background-image: url("../assets/resenas-banner.jpg");
 }
 .banner--contacto {
-  background-image: url("../assets/contacto-banner.jpg");
-  background-position: center;
+  background-image: url("../assets/contacto-banner.png");
+  background-position: bottom 90px;
 }
 
 .barra {
@@ -126,11 +127,12 @@
   align-items: center;
   max-width: 100%;
 }
-.contacto__form__btn {
-  margin-top: 10px;
-}
 .contacto__form__btn button {
   width: 200px;
+  transition: all 0.2s ease-in-out !important;
+}
+.contacto__form__btn button:hover {
+  transform: scale(1.1) !important;
 }
 .contacto__form__input {
   width: 500px !important;
@@ -202,6 +204,10 @@
 }
 .nuestros-productos__collection__item img {
   height: 275px;
+}
+
+.card {
+  width: 18rem;
 }
 
 .pie {

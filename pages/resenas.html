@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="grid-container--resenas">
@@ -23,22 +27,22 @@
                     <img src="../assets/logo.jpg" alt="Logo de Fox Coffee" class="barra__logo--fox-coffee-img">
                     <h1>Fox Coffee</h1>
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse barra__menuitems" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="./quienes-somos.html">¿Quiénes Somos?</a>
-                  <a class="nav-link" href="./productos.html">Productos</a>
-                  <a class="nav-link activo" href="./resenas.html">Reseñas</a>
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse barra__menuitems" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./quienes-somos.html">¿Quiénes Somos?</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link activo" href="./resenas.html">Reseñas</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
                 </div>
-              </div>
             </div>
           </nav>
         <div class="banner banner--resenas">
-            <p>El Café de cada día</p>
+            <p class="animate__animated animate__fadeInRight">El Café de cada día</p>
         </div>
         <main class="resenas">
             <h2 class="titulo">Reseñas</h2>
@@ -46,7 +50,7 @@
                 <article class="resenas__collection__card">
                     <p class="resenas_collection__card__texto">El mejor lugar para trabajar fuera de la oficina. Buen Wi-Fi, cómodas mesas y deliciosos frappés.</p>
                     <div class="resenas__collection__card__persona">
-                        <img src="../assets/resenas-img-one.jpg" alt="">
+                        <img src="../assets/resenas-img-one.jpg" alt="Imagen de Agustín Ezequiel Patetta">
                         <p>Agustín Ezequiel Patetta</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -68,7 +72,7 @@
                 <article class="resenas__collection__card">
                     <p class="resenas_collection__card__texto">Visito Fox Coffee todos los miércoles. El ambiente es perfecto para desconectar del trabajo y disfrutar de un buen té.</p>
                     <div class="resenas__collection__card__persona">
-                        <img src="../assets/resenas-img-two.png" alt="">
+                        <img src="../assets/resenas-img-two.png" alt="Imagen de Carlos Gabriel Luttringer">
                         <p>Carlos Gabriel Luttringer</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -90,7 +94,7 @@
                 <article class="resenas__collection__card">
                     <p class="resenas_collection__card__texto">Un lugar encantador con bebidas de calidad. Ideal para tomar un café tranquilo y ponerse al día con los amigos.</p>
                     <div class="resenas__collection__card__persona">
-                        <img src="../assets/resenas-img-three.png" alt="">
+                        <img src="../assets/resenas-img-three.png" alt="Imagen de Mateo Nahuel Batistelli">
                         <p>Mateo Nahuel Batistelli</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -112,7 +116,7 @@
                 <article class="resenas__collection__card">
                     <p class="resenas_collection__card__texto">Frappés increíbles y un ambiente genial para pasar la tarde con amigos. ¡Muy recomendable y conforme!</p>
                     <div class="resenas__collection__card__persona">
-                        <img src="../assets/resenas-img-four.png" alt="">
+                        <img src="../assets/resenas-img-four.png" alt="Imagen de Natasha Nasra">
                         <p>Natasha Nasra</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -134,7 +138,7 @@
                 <article class="resenas__collection__card">
                     <p class="resenas_collection__card__texto">Descubrí Fox Coffee hace unos meses y me encanta. El café siempre está fresco y el personal es muy amable.</p>
                     <div class="resenas__collection__card__persona">
-                        <img src="../assets/resenas-img-five.png" alt="">
+                        <img src="../assets/resenas-img-five.png" alt="Imagne de Damián Ozan">
                         <p>Damián Ozan</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -155,7 +159,7 @@
                 </article>
             </section>
         </main>
-        <div class="visitanos">
+        <div class="visitanos" class="visitanos" data-aos="zoom-in" data-aos-duration="1300" data-aos-once="true">
             <h3 class="titulo">Visitanos</h3>
             <div class="visitanos__collection">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.899363679615!2d-58.37538972481169!3d-34.631983358990524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb34c34d2059%3A0x2c95f10a23e9903b!2sHavanna!5e0!3m2!1ses-419!2sar!4v1717955444690!5m2!1ses-419!2sar" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -185,5 +189,7 @@
         </footer>
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
