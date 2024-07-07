@@ -1,5 +1,11 @@
 @media (max-width:768px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+
     .grid-container--index{
+        @extend .grid-container;
         grid-template-areas: 
         "barra barra"
         "banner banner"
@@ -8,10 +14,9 @@
         "visitanos visitanos"
         "pie pie"
         ;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
     }
     .grid-container--quienes-somos{
+        @extend .grid-container;
         display: grid;
         grid-template-areas: 
         "barra barra"
@@ -20,10 +25,9 @@
         "visitanos visitanos"
         "pie pie"
         ;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
     }
     .grid-container--productos{
+        @extend .grid-container;
         grid-template-areas: 
         "barra barra"
         "banner banner"
@@ -31,10 +35,9 @@
         "visitanos visitanos"
         "pie pie"
         ;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
     }
     .grid-container--resenas{
+        @extend .grid-container;
         grid-template-areas: 
         "barra barra"
         "banner banner"
@@ -42,10 +45,9 @@
         "visitanos visitanos"
         "pie pie"
         ;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
     }
     .grid-container--contacto{
+        @extend .grid-container;
         grid-template-areas: 
         "barra barra"
         "banner banner"
@@ -53,8 +55,6 @@
         "visitanos visitanos"
         "pie pie"
         ;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
     }
     .banner--index{
         background-position: left;
