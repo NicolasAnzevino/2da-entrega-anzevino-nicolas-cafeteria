@@ -16,14 +16,15 @@ Este Proyecto fue durante la cursada de Desarrollo Web de CoderHouse.
 <h3>Características Adicionales</h3>
 <ul>
     <li>Todas las páginas deben mostrar la ubicación del local, su horario de atención</li>
-    <li>Todas las páginas deben estar adaptadas tanto para equipos de escritorio, así como para tabletas y celulares</li>
+    <li>Todas las páginas deben ser responsivas, adaptándose tanto para equipos de escritorio, como para tabletas y celulares</li>
 </ul>
-<h4>Tecnologías y Herramientas utilizadas</h4>
+<h4>Tecnologías y Frameworks utilizados</h4>
 <ul>
     <li>HTML</li>
     <li>CSS, SCSS</li>
     <li>Bootstrap</li>
     <li>Animate</li>
+    <li>AOS</li>
 </ul>
 
 

@@ -16,6 +16,8 @@
         iframe{
             margin-bottom: 20px;
             border-radius: 10px;
+            @include establecerAltoAncho(250px,450px);
+            border: 0;
         }
 
         &-items{

@@ -23,7 +23,11 @@
                 @extend .historia__collection_card;
                 text-align: end;
                 margin-top: 20px;
-            }        
+            }
+
+            p{
+                padding:10px;
+            }
         }
     }
 }

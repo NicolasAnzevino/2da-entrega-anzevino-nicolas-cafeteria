@@ -187,6 +187,9 @@
   text-align: end;
   margin-top: 20px;
 }
+.historia__collection_card p, .historia__collection_card--two p {
+  padding: 10px;
+}
 
 .nuestros-productos {
   grid-area: nuestros-productos;
@@ -322,6 +325,9 @@
 .visitanos__collection iframe {
   margin-bottom: 20px;
   border-radius: 10px;
+  height: 250px;
+  width: 450px;
+  border: 0;
 }
 .visitanos__collection-items {
   display: flex;
