@@ -12,7 +12,7 @@
             margin: 10px 10px 10px 10px;
             @include establecerAltoAncho(320px, 370px);
             text-align: center;
-            background-color: map-get($map: $color-, $key: resenas-contacto-card);
+            background-color: map-get($color-, resenas-contacto-card);
             color: #ffffff;
             max-width: 100%;
             padding:5px;
@@ -27,8 +27,8 @@
 
 //Estilos aplicados específicamente a íconos de Bootstrap que se utilizan en las reseñas.
 .bi-star-fill{
-    color: map-get($map: $color-, $key: star);
+    color: map-get($color-, star);
 }
 .bi-star-half{
-    color: map-get($map: $color-, $key: star);
+    color: map-get($color-, star);
 }

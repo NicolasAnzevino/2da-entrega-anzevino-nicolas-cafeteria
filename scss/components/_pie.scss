@@ -1,6 +1,6 @@
 .pie{
     grid-area:pie;
-    background-color: map-get($map: $color-, $key: barra-banner-footer);
+    background-color: map-get($color-, barra-banner-footer);
     display: flex;
     flex-wrap: wrap;
     padding-top: 7px;
